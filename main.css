@@ -1,9 +1,17 @@
-h1 {
-    color: red;
+.product-item {
+	background-color: gray;
+	display: inline-block;
+	height: 25px;
+	padding: 5px;
+	border-radius: 5px;
 }
 
-.text2018 {
-    color: #ff59c0;
-    font-size: 40px;
-	background-color: green;
+.amount {
+	background-color: yellow;
+	border-radius: 10px;
+	
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	text-align: center;
 }
