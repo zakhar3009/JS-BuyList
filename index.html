@@ -1,16 +1,97 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="uk">
+<head>
     <meta charset="UTF-8">
     <title>My Page</title>
 
 
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+<section class="main">
+
+    <section class="section1">
+
+        <section class="section11">
+            <label>
+                <input class="nameOfTheItem" type="text" placeholder="Назва товару"/>
+            </label>
+            <button class="add">Додати</button>
+        </section>
+        <hr class="separators"/>
+
+        <section class="section12">
+            <label class="tomatoes">Помідори</label>
+            <label class="numbersOfItems">2</label>
+            <button class="purchases">Не куплено</button>
+        </section>
+        <hr class="separators"/>
+
+        <section class="section13">
+            <label class="cookies">Печиво</label>
+            <div class="cookiesButtons">
+                <button class="minus">-</button>
+                <label class="numbersOfItems">2</label>
+                <button class="plus">+</button>
+            </div>
+            <div>
+                <button class="purchases">Куплено</button>
+                <button class="delete">×</button>
+            </div>
+        </section>
+        <hr class="separators"/>
+
+        <section class="section14">
+            <label>
+                <input class="itemInput" value="Сир"/>
+            </label>
+            <div>
+                <button class="disabledMinus" disabled="">-</button>
+                <label class="numbersOfItems">1</label>
+                <button class="plus">+</button>
+            </div>
+            <div>
+                <button class="purchases">Куплено</button>
+                <button class="delete">×</button>
+            </div>
+        </section>
+    </section>
+
+    <section class="section2">
+        <section class="section21">
+            <label class="section2Labels">Залишилося</label>
+        </section>
+        <hr class="separators"/>
+
+        <section class="section22">
+             <span class="product-item">
+                 Печиво
+                 <span class="amount">4</span>
+             </span>
+            <span class="product-item">
+                 Сир
+                 <span class="amount">1</span>
+             </span>
+        </section>
+        <hr class="separators"/>
+
+        <section class="section23">
+            <label class="section2Labels">Куплено</label>
+        </section>
+        <hr class="separators"/>
+
+        <section class="section24">
+             <span class="product-item">
+                 <label class="tomatoesLabels">Помідори</label>
+                 <span class="amount">
+                     <label class="tomatoesLabels">2</label>
+                 </span>
+             </span>
+        </section>
+
+    </section>
+
+</section>
+
 </body>
 </html>
