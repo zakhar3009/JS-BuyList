@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>My Page</title>
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css"/>
 </head>
 <body>
@@ -13,46 +12,46 @@
     <section class="section1">
 
         <section class="section11">
-            <label>
                 <input class="nameOfTheItem" type="text" placeholder="Назва товару"/>
-            </label>
-            <button class="add">Додати</button>
+            <button class="add" data-tooltip="Ця кнопка додасть товар">
+                Додати
+            </button>
         </section>
-        <hr class="separators"/>
+        <hr/>
 
         <section class="section12">
-            <label class="tomatoes">Помідори</label>
+            <input class="tomatoes" value="Помідори"/>
             <label class="numbersOfItems">2</label>
-            <button class="purchases">Не куплено</button>
+            <button class="purchases" data-tooltip="Товар ще не куплено">Не куплено</button>
         </section>
-        <hr class="separators"/>
+        <hr/>
 
         <section class="section13">
-            <label class="cookies">Печиво</label>
+            <input class="cookies" value="Печиво"/>
             <div class="cookiesButtons">
-                <button class="minus">-</button>
+                <button class="minus" data-tooltip="Забрати одиницю товару з кошика">-</button>
                 <label class="numbersOfItems">2</label>
-                <button class="plus">+</button>
+                <button class="plus" data-tooltip="Додати одиницю товару до кошика">+</button>
             </div>
             <div>
-                <button class="purchases">Куплено</button>
-                <button class="delete">×</button>
+                <button class="purchases" data-tooltip="Куплено 2 одиниці товару">Куплено</button>
+                <button class="delete" data-tooltip="Видалити цей товар з кошика">×</button>
             </div>
         </section>
-        <hr class="separators"/>
+        <hr/>
 
         <section class="section14">
             <label>
-                <input class="itemInput" value="Сир"/>
+                <input class="cheese" value="Сир"/>
             </label>
             <div>
-                <button class="disabledMinus" disabled="">-</button>
+                <button class="disabledMinus"  data-tooltip="Кнопка наразі не активна">-</button>
                 <label class="numbersOfItems">1</label>
-                <button class="plus">+</button>
+                <button class="plus" data-tooltip="Додати одиницю товару до кошика">+</button>
             </div>
             <div>
-                <button class="purchases">Куплено</button>
-                <button class="delete">×</button>
+                <button class="purchases" data-tooltip="Куплено 1 одиницю товару">Куплено</button>
+                <button class="delete" data-tooltip="Видалити цей товар з кошика">×</button>
             </div>
         </section>
     </section>
@@ -61,7 +60,7 @@
         <section class="section21">
             <label class="section2Labels">Залишилося</label>
         </section>
-        <hr class="separators"/>
+        <hr/>
 
         <section class="section22">
              <span class="product-item">
@@ -78,7 +77,7 @@
         <section class="section23">
             <label class="section2Labels">Куплено</label>
         </section>
-        <hr class="separators"/>
+        <hr/>
 
         <section class="section24">
              <span class="product-item">
@@ -92,6 +91,10 @@
     </section>
 
 </section>
+<div class="badge">
+    <div class="badge-content">BuyList</div>
+    <div class="badge-content-print">Created by Litvinchuk Zakhar</div>
+</div>
 
 </body>
 </html>
